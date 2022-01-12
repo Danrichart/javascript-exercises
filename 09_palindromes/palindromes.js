@@ -1,4 +1,7 @@
-const palindromes = function () {
+const palindromes = function (word) {
+    let saniWord = word.toLowerCase().replace(/[^\w]/g,""); 
+    let result = saniWord.split("").reverse().join('');
+    return (result == saniWord)
 
 };
 
